@@ -1,0 +1,49 @@
+{
+  "type": "web",
+  "devices": {
+    "high-end": {}
+  },
+  "repetitions": 15,
+  "clear_cache": true, 
+  "duration": 60000,
+  "browsers": ["chrome"],
+  "monkeyrunner_path": "/home/lucien/Android/Sdk/tools/bin/monkeyrunner",
+  "systrace_path": "/home/lucien/Android/Sdk/platform-tools/systrace/systrace.py",
+  "powerprofile_path": "/home/lucien/Desktop/green-lab/power_profile.xml", 
+  "paths": [
+    "https://www.aliexpress.com/",
+    "https://www.deliveroo.co.uk/",
+    "https://www.reddit.com/",
+    "https://www.weather.com/",
+    "https://www.9gag.com/",
+    "https://www.youtube.com/",
+    "https://www.zara.com/us/"
+  ],
+  
+  "randomization": true,
+  "profilers": {
+    "batterystats": {
+      "cleanup": true,
+      "subject_aggregation": "default",
+      "experiment_aggregation": "default",
+      "enable_systrace_parsing": false,
+      "python2_path": "python2"
+    }
+  },
+  "scripts": {
+    "before_experiment": "scripts/before_experiment.py",
+    "before_run": "scripts/before_run.py",
+    "after_launch": "scripts/after_launch_7pro.py",
+    "interaction": [
+      {
+        "type": "python3",
+        "path": "./scripts/interaction_web_7pro.py",
+        "timeout": 65000
+      }
+    ],
+    "before_close": "scripts/before_close.py",
+    "after_run": "scripts/after_run.py",
+    "after_experiment": "scripts/after_experiment.py"
+  },
+  "time_between_run": 120000
+}

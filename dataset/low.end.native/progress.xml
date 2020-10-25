@@ -1,0 +1,533 @@
+<experiment>
+  <configHash>c4d9ef0f2c8d7a8a3245fff15568fb7d</configHash>
+  <outputDir>/home/lucien/androidrunner/android-runner/experiments/output/2020.10.16_160521/</outputDir>
+  <runsToRun>
+    </runsToRun>
+  <runsDone>
+    <run runId="66">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="28">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="49">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="95">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="33">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="8">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="13">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="75">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="14">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="102">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="53">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="26">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="65">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="16">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="77">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="60">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="17">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="92">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="97">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="61">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="52">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="47">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="99">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="93">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="50">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="29">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="25">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="12">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="43">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="2">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="45">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="11">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="5">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="54">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="57">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="89">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="39">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="37">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="63">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="90">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="78">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="36">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="101">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="73">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="69">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="40">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="70">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="27">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="56">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="87">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="86">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="76">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="32">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="98">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="104">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="68">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="20">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="64">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="41">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="3">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="18">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="91">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="74">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="83">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="31">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="80">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="79">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="59">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="103">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="38">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="88">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="72">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="1">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="71">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>12</runCount>
+    </run>
+    <run runId="85">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="94">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="24">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="55">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="67">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="22">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="48">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="81">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="15">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="19">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="96">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="7">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="34">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="4">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="35">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="84">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>10</runCount>
+    </run>
+  <run runId="100">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.inditex.zara.apk</path>
+      <runCount>11</runCount>
+    </run>
+  <run runId="21">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="10">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>11</runCount>
+    </run>
+    <run runId="62">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.ninegag.android.app.apk</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="51">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="82">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.weather.Weather.apk</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="44">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>15</runCount>
+    </run>
+    <run runId="42">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>13</runCount>
+    </run>
+    <run runId="30">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.reddit.frontpage.xapk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="23">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.deliveroo.orderapp.xapk</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="58">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>14</runCount>
+    </run>
+    <run runId="46">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.google.android.youtube.xapk</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="6">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="0">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="9">
+      <device>low-end</device>
+      <path>android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk</path>
+      <runCount>10</runCount>
+    </run>
+    </runsDone>
+</experiment>

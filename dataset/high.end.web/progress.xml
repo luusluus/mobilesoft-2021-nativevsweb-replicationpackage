@@ -1,0 +1,637 @@
+<experiment>
+  <configHash>b88ce766a9d65bd5c78a77085642b083</configHash>
+  <outputDir>/home/lucien/androidrunner/android-runner/experiments/output/2020.10.14_144321/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="78">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="89">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="25">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="95">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="87">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="63">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="90">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="18">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="99">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="61">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="82">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="49">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="92">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="100">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="93">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="104">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="16">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="88">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="103">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="68">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="37">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="27">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="13">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="80">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="76">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="8">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="29">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="59">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="14">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="11">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="64">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="30">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="70">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="86">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="2">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="66">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="69">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="85">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="97">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="47">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="83">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="77">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="28">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="1">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="33">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="55">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="54">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="91">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="81">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="56">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="75">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="21">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="52">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="9">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="24">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="15">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="23">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="38">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="31">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="34">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="79">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="41">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="50">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="5">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="40">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="26">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="73">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="19">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="71">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="57">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="44">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="4">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="42">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="53">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="3">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="72">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="7">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="45">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="32">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="36">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="74">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>15</runCount>
+    </run>
+    <run runId="101">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>12</runCount>
+    </run>
+    <run runId="0">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+    <run runId="94">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>5</runCount>
+    </run>
+    <run runId="65">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="22">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="46">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>2</runCount>
+    </run>
+    <run runId="96">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="20">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="39">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="10">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>11</runCount>
+    </run>
+    <run runId="17">
+      <device>high-end</device>
+      <path>https://www.deliveroo.co.uk/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="48">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>4</runCount>
+    </run>
+    <run runId="43">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="98">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>9</runCount>
+    </run>
+    <run runId="12">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="58">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>14</runCount>
+    </run>
+    <run runId="84">
+      <device>high-end</device>
+      <path>https://www.youtube.com/</path>
+      <browser>chrome</browser>
+      <runCount>10</runCount>
+    </run>
+    <run runId="62">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>3</runCount>
+    </run>
+    <run runId="51">
+      <device>high-end</device>
+      <path>https://www.weather.com/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="102">
+      <device>high-end</device>
+      <path>https://www.zara.com/us/</path>
+      <browser>chrome</browser>
+      <runCount>13</runCount>
+    </run>
+    <run runId="35">
+      <device>high-end</device>
+      <path>https://www.reddit.com/</path>
+      <browser>chrome</browser>
+      <runCount>6</runCount>
+    </run>
+    <run runId="6">
+      <device>high-end</device>
+      <path>https://www.aliexpress.com/</path>
+      <browser>chrome</browser>
+      <runCount>7</runCount>
+    </run>
+    <run runId="67">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>8</runCount>
+    </run>
+    <run runId="60">
+      <device>high-end</device>
+      <path>https://www.9gag.com/</path>
+      <browser>chrome</browser>
+      <runCount>1</runCount>
+    </run>
+  </runsDone>
+</experiment>

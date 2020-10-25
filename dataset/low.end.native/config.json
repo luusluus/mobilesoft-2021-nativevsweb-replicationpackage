@@ -1,0 +1,48 @@
+{
+  "type": "native",
+  "devices": {
+    "low-end": {}
+  },
+  "repetitions": 15,
+  "clear_cache": true,
+  "duration": 60000,
+  "reset_adb_among_runs": true,
+  "monkeyrunner_path": "/home/lucien/Android/Sdk/tools/bin/monkeyrunner",
+  "systrace_path": "/home/lucien/Android/Sdk/platform-tools/systrace/systrace.py",
+  "powerprofile_path": "/home/lucien/androidrunner/android-runner/experiments/power_profile/J7/power_profile.xml",
+  "randomization": true,
+  "paths": [
+    "android-runner/experiments/apps/com.alibaba.aliexpresshd.xapk",
+    "android-runner/experiments/apps/com.deliveroo.orderapp.xapk",
+    "android-runner/experiments/apps/com.reddit.frontpage.xapk",
+    "android-runner/experiments/apps/com.google.android.youtube.xapk",
+    "android-runner/experiments/apps/com.ninegag.android.app.apk",
+    "android-runner/experiments/apps/com.weather.Weather.apk",
+    "android-runner/experiments/apps/com.inditex.zara.apk"
+  ],
+  "profilers": {
+    "batterystats": {
+      "cleanup": true,
+      "subject_aggregation": "default",
+      "experiment_aggregation": "default",
+      "enable_systrace_parsing": false,
+      "python2_path": "python2"
+    }
+  },
+  "scripts": {
+    "before_experiment": "scripts/before_experiment.py",
+    "before_run": "scripts/before_run.py",
+    "after_launch": "scripts/after_launch.py",
+    "interaction": [
+      {
+        "type": "python3",
+        "path": "./scripts/interaction_native.py",
+        "timeout": 65000
+      }
+    ],
+    "before_close": "scripts/before_close.py",
+    "after_run": "scripts/after_run.py",
+    "after_experiment": "scripts/after_experiment.py"
+  },
+  "time_between_run": 120000
+}

@@ -1,0 +1,444 @@
+---
+title: "App vs Web App"
+author: "Luciën Martijn, Stijn Meijerink, Daniël Hana, Terry Bommels, Dion David Haneveld"
+date: "23 October 2020"
+output: pdf_document
+highlight: tango
+---
+
+```{r echo = T, results = 'hide', message=FALSE, warning=FALSE, error=FALSE}
+# Include libraries used in lectures
+library(tidyverse)
+library(car)
+library(bestNormalize)
+library(ggplot2)
+library(effsize)
+library(xtable)
+library(EnvStats)
+```
+
+First we read recursively all data collected to construct one big dataframe.
+```{r echo = T, results = 'hide', message=FALSE, warning=FALSE, error=FALSE}
+
+setwd('..')
+
+# Get all joule_results.*.csv
+csv_paths <- list.files(path = './dataset/', 
+                        recursive = TRUE, 
+                        pattern = "^Joule.*\\.csv", 
+                        full.names = TRUE)
+# read all csv
+app_data <- csv_paths %>%
+  lapply(read_csv) %>%
+  bind_rows
+
+# Add paths to data frame for reading out the correct names later
+app_data['path'] = csv_paths
+
+# Based on the paths get the device tier and add it to the dataframe
+app_data['device'] <- csv_paths %>%
+  strsplit('-', fixed = TRUE) %>%
+  rapply(nth, n=1) %>%
+  strsplit('/', fixed = TRUE) %>%
+  rapply(nth, n=6) %>%
+  factor
+
+extract_app_type <- function(splitString){
+  temp <- strsplit(x = splitString, split = '-', fixed = TRUE)
+  result <- unlist(temp)[3]
+  if(str_detect(result, 'www')){
+    result <- "web"
+  }
+  if(str_detect(result, 'runner')){
+    result <- "native"
+  }
+  return(result)
+}
+# Extract app type based on path
+app_type <- app_data$path %>%
+  lapply(extract_app_type)
+app_data['app_type']<- unlist(app_type)
+
+extract_app_name <- function(path)  {
+  temp <- strsplit(x = path, split = '/', fixed = TRUE)
+  result <- unlist(temp)[7]
+  if(str_detect(result, '(.*https-www.*)')){
+    result <- unlist(strsplit(x = result, split = '-'))[3]
+  }
+  if(str_detect(result, '(.*android-runner-experiments.*)')){
+    result <- unlist(strsplit(x = result, split = '-'))[6]
+  }
+  return(result)
+}
+
+# Extract app names based on path
+app_names <- app_data$path %>%
+  lapply(extract_app_name)
+app_data['app'] <- unlist(app_names)
+
+updateMisalignedAppNames <- function(app){
+  if(app == 'alibaba'){
+    app = 'aliexpress'
+  } else if(app == 'inditex'){
+    app = 'zara'
+  } else if(app == 'ninegag'){
+    app = '9gag'
+  } else if(app == 'google'){
+    app = 'youtube'
+  }else {
+    app = app
+  }
+}
+
+# The native app name for aliexpress is Alibaba so we update it to aliexpress
+updatedAppNames <- app_data$app %>%
+  lapply(updateMisalignedAppNames)
+
+# Add the updated names to the dataframe again
+app_data['app'] <- unlist(updatedAppNames)
+
+app_data$app_type <- as.factor(app_data$app_type)
+app_data$app <- as.factor(app_data$app)
+```
+```{r}
+# Show a part of the data frame
+tail(app_data)
+```
+
+Let us also see if all treatments are present. Indeed for all combination we have $8 * 15 = 120$ observations.
+```{r}
+table(app_data$device, app_data$app_type)
+```
+
+And write the full results to a file, to distribute for the replication package.
+```{r}
+write_csv(path = './full_results.csv', x = app_data)
+# Create plots dir
+dir.create("./plots")
+```
+
+
+# 1. Discriptive statistics
+
+```{r}
+# Define a summarize data function
+summarize_data <- function(data){
+  data %>%
+  group_by(app) %>%
+  summarize(n = n(), 
+            mean = mean(Joule_calculated),
+            median = median(Joule_calculated),
+            sd = sd(Joule_calculated),
+            IQR = IQR(Joule_calculated),
+            min = min(Joule_calculated),
+            max = max(Joule_calculated))
+}
+
+total_summarize <- summarize_data(app_data)
+total_summarize
+print(xtable(total_summarize, type = "latex"))
+```
+The full data frame is summarised. We see quite some big standard deviations. If we now group by device we see a clear pattern arrise.
+
+```{r}
+app_data %>%
+  group_by(app_type, device) %>%
+  summarise(mean = mean(Joule_calculated),
+            sd = sd(Joule_calculated))
+```
+This shows us that the mean of high-end data is lower. Furthermore we observe that the standard deviation is much less at the high-end deivce tier. The last observation we can make is that in general app_type web consumes more energy.
+
+Visualizing the full data frame with a boxplot results in the following plot.
+```{r}
+jpeg(file="./plots/boxplot_full.jpeg")
+boxplot(app_data$Joule_calculated, main = "Joules Distribution of entire dataset",  ylab = "Joules", col = "steelblue", border = "black", xlab="Energy consumption")
+dev.off()
+```
+We see a positively skewed dataset with quite some outliers. 
+
+Let us split this up on device type and we see two more normal distributed boxplots. However for a low-end device the distribution still has a heavy right tail.
+```{r}
+jpeg(file="./plots/boxplot_device.jpeg")
+boxplot(Joule_calculated ~ device,
+  data = app_data,
+  main = "Joules Distribution by device tier",
+  xlab = "Device tier",
+  ylab = "Joules",
+  col = "steelblue",
+  border = "black", 
+  las = 2 #make x-axis labels perpendicular
+)
+dev.off()
+```
+<!-- IVANO's paper -->
+<!-- As shown in the boxplot in Figure 2, the dataset appears quite positively skewed, with the mean higher than the median. Indeed, the data scores negatively for normality (W = 0.95141, p-value = 0.02459). This is due to the high difference in the energy consumption values between the two mobile devices, as can be also observed in the boxplot in Figure x. For this reason, for the rest of our analysis we will use the type of mobile device as a blocking factor. -->
+
+```{r}
+jpeg(file="./plots/boxplot_device_app_type.jpeg")
+boxplot(Joule_calculated ~ device : app_type,
+  data = app_data,
+  main = "Joules Distribution by app type by device",
+  xlab = "device:app type",
+  ylab = "Joules",
+  col = "steelblue",
+  border = "black", 
+  las = 1 #make x-axis labels perpendicular
+)
+dev.off()
+```
+Heavy right tails still on the low-end data. Some outlier on the high web.
+
+This lets us conclude that we should take the device tier as blocking factor. For the rest of the analysis we therefore will use this as blocking factor. Therefore a two way ANOVA is not possible anymore, because we are missing the interaction factor in the model. This however also splits RQ1 in 2 sub-questions.
+
+```{r}
+# To account for both treatments on one subject (in this case app) we aggregate the data as follows:
+mean_device_app_type <- app_data %>%
+  group_by(app_type, device, app) %>%
+  summarise(mean(Joule_calculated)) %>%
+  arrange(app)
+
+names(mean_device_app_type)[names(mean_device_app_type)=="mean(Joule_calculated)"] <- "Joule"
+
+# This leaves us with 32 rows = 2 (app_type) * 2 (device tiers) * 8 (apps)
+```
+
+
+# 2. Hypothesis Testing
+The back-up statisical test that we get to know is the one way ANOVA, because we are left with one response variable and one explainatiry factor (fixed on two levels). However this is equivalent to a paired t-test. Therefore we will conduct a paired t test with a split on device tier, to account for the blocking factor.
+
+### Assumption 1
+The subjects should be selected randomly from the population. This has been accounted for in the experiment setup.
+
+### Assumption 2
+The differences between the pairs should be approximately normally distributed
+
+```{r}
+check_normality <- function(data){
+  plot(density(data))
+  car::qqPlot(data)
+  shapiro.test(data)
+}
+```
+
+
+This is aggregated over 15 datapoints per subject. Here for both low-end and high-end devices differences  are taken. This is not good, as device type is blocking factor.
+```{r}
+mean_device_app_type_high <- app_data %>%
+  filter(device == 'high') %>%
+  arrange(app_type, app)
+
+mean_device_app_type_low <- app_data %>%
+  filter(device == 'low')%>%
+  arrange(app_type, app)
+
+# differences <- with(mean_device_app_type, Joule[app_type == "web"] - Joule[app_type == "native"])
+```
+
+Split dataset in high-tier & low-tier due to blocking factor device type (each group of 210 points)
+```{r}
+mean_device_app_type_high <- app_data %>%
+  filter(device == 'high') %>%
+  arrange(app_type, app)
+
+mean_device_app_type_low <- app_data %>%
+  filter(device == 'low') %>%
+  arrange(app_type, app)
+```
+
+```{r}
+check_normality(mean_device_app_type_high$Joule_calculated)
+
+check_normality(mean_device_app_type_low$Joule_calculated)
+```
+
+
+Check normality of differences for high end device tier:
+```{r}
+differences_high <- with(mean_device_app_type_high, Joule_calculated[app_type == "web"] - Joule_calculated[app_type == "native"])
+normality_high <- check_normality(differences_high)
+normality_high
+# Likely to stem from normal distribution
+```
+
+```{r}
+# Write image
+jpeg("./plots/qq_high.jpeg")
+car::qqPlot(differences_high, main="QQ-plot of differences in joule for high-end device")
+dev.off()
+```
+
+Check normality of differences for low end device tier:
+```{r}
+differences_low <- with(mean_device_app_type_low, Joule_calculated[app_type == "web"] - Joule_calculated[app_type == "native"])
+check_normality(differences_low)
+# Does not stem from normal distribution
+```
+Because it doesn't fit the low device data does not fit the normal distribution we try to add some transformations.
+
+```{r}
+# Write image
+jpeg("./plots/qq_low.jpeg")
+car::qqPlot(differences_low, main="QQ-plot of differences in joule for low-end device")
+dev.off()
+```
+
+# Add transformations
+```{r}
+add_transform_data <- function(device_app_data){
+  return(device_app_data %>%
+    mutate(joule_log = log(Joule_calculated),
+           joule_sqrt = sqrt(Joule_calculated),
+           joule_reciprocal = 1/Joule_calculated))
+}
+mean_device_app_type_high <- add_transform_data(mean_device_app_type_high)
+mean_device_app_type_low <- add_transform_data(mean_device_app_type_low)
+```
+```{r}
+normality_diff_log <- shapiro.test(with(mean_device_app_type_low, joule_log[app_type == "web"] - joule_log[app_type == "native"]))
+normality_diff_sqrt <- shapiro.test(with(mean_device_app_type_low, joule_sqrt[app_type == "web"] - joule_sqrt[app_type == "native"]))
+normality_diff_recip <- shapiro.test(with(mean_device_app_type_low, joule_reciprocal[app_type == "web"] - joule_reciprocal[app_type == "native"]))
+
+normality_diff_log$p.value
+normality_diff_sqrt$p.value
+normality_diff_recip$p.value
+```
+All are under alpha treshold. So normality can't be assumed.
+So normality can't be assumed. Therefore for the low data we perform a non parametric alternative.
+
+### Assumption 3 (for paired t-test)
+There should be no extreme outliers in the differences.
+
+```{r}
+par(mfrow=c(1,2))
+jpeg("./plots/combined_box_plots")
+boxplot(differences_high)
+# boxplot(Joule_calculated~app_type, data= mean_device_app_type_high, main = "Distribution for a high end device with both app types")
+# boxplot(Joule_calculated~app_type, data= mean_device_app_type_low, main = "Distribution for a low end device with both app types")
+dev.off()
+```
+Differences of high end data has no outliers.
+
+# RQ1 (high-end)
+RQ1 (high-end) will be answered with the paired t-test.
+
+```{r}
+# Perform paired t test
+high_end_web <- mean_device_app_type_high %>%
+  filter(app_type == 'web')
+high_end_native <- mean_device_app_type_high %>%
+  filter(app_type == 'native')
+highRes <- t.test(x = high_end_web$Joule_calculated, y = high_end_native$Joule_calculated, paired = T, alternative = "two.sided")
+
+highRes$p.value
+```
+The obtained p-value for high-end device is `r highRes$p.value ` which is significant. 
+
+```{r}
+low_end_web <- mean_device_app_type_low %>%
+  filter(app_type == 'web')
+low_end_native <- mean_device_app_type_low %>%
+  filter(app_type == 'native')
+lowRes <- wilcox.test(x = low_end_web$Joule_calculated, y = low_end_native$Joule_calculated, paired = T, alternative = "two.sided")
+
+lowRes$p.value
+```
+The obtained p-value for low-end device is `r highRes$p.value ` which is significant.
+
+However because we perform a t test multiple times we have to adjust the p values.
+
+```{r}
+# adjust p values
+adjustedPVals <- p.adjust(c(highRes$p.value, lowRes$p.value), method = 'BH')
+adjustedPVals
+```
+The adjusted p-values for high and low end device are `r adjustedPVals[1] ` and `r adjustedPVals[2] ` respectively.
+
+This leads us to reject the null-hypothesis of equal means for the high-end device. For the low end device the statistical signifiance is also significant enough to reject the null-hypothesis.
+
+This leads us to the following conclusion for RQ1: there is a significant difference in energy consumption.
+
+# 3. Effect size
+```{r}
+# Effect size
+cohenResHigh <- cohen.d(high_end_web$Joule_calculated, high_end_native$Joule_calculated, paired = T, pooled = FALSE)
+cliffResLow <- cliff.delta(low_end_web$Joule_calculated, low_end_native$Joule_calculated, paired = T, pooled = FALSE)
+
+cohenResHigh$estimate #Effect size is large for high
+cliffResLow$estimate #Effect size is large for low
+```
+Effect size for both device tiers is large.
+
+# Extra visualizations
+
+```{r}
+font_size <- 12
+
+visualize_both <- function(data, title){
+  result <- ggplot(data, aes(x = app, y = Joule_calculated)) +
+  theme_classic() +
+  xlab("App") + ylab("Joules") +
+  ylim(c(0, max(data$Joule_calculated) + 50)) +
+  geom_boxplot(mapping = aes(label = app_type, fill = app_type), width = 1, color = 'black', outlier.size = .5, alpha = .7) +
+  geom_violin(mapping = aes(label = app_type, color = app_type), trim = TRUE, alpha = .8, width = 1) +
+  # stat_summary(mapping = aes(color = app_type), fun = mean, geom = 'point', shape = 5, size = 2, show.legend = T) +
+  theme(
+    strip.text.x = element_text(size = font_size),
+    strip.text.y = element_text(size = font_size),
+    axis.text.x = element_text(size = font_size, angle = 90),
+    axis.text.y = element_text(size = font_size),
+    )  +
+    labs(title = title,subtitle = NULL,caption = NULL)
+  
+  return(result)
+}
+```
+
+```{r}
+visualize_both(mean_device_app_type_high, "High end data visualized for every app with app_type treatment")
+ggsave("./plots/gg_plot_high_end.jpeg")
+```
+Except for aliexpress every web app has a higher energy consumption. Aliexpress however also shows a high standard deviation for the native app, which could possibly indicate a measurement error.
+
+```{r}
+visualize_both(mean_device_app_type_low, "Low end data visualized for every app with app_type treatment")
+ggsave("./plots/gg_plot_low_end.jpeg")
+```
+The low end device's data has more deviation in the data with some outliers for example at weather_native and youtube_web.
+
+```{r}
+app_data %>% summarise(
+  min = min(Joule_calculated),
+  max = max(Joule_calculated),
+  median = median(Joule_calculated),
+  mean = mean(Joule_calculated),
+  sd = sd(Joule_calculated),
+  cv = cv(Joule_calculated)
+)
+```
+Energy consumption summarized for both devices.
+
+```{r}
+app_data %>%
+group_by(device) %>% summarise(
+  min = min(Joule_calculated),
+  max = max(Joule_calculated),
+  median = median(Joule_calculated),
+  mean = mean(Joule_calculated),
+  sd = sd(Joule_calculated),
+  cv = cv(Joule_calculated)
+)
+```
+Energy consumption summarized per device.
+
+```{r}
+app_data %>%
+group_by(device, app_type) %>% summarise(
+  min = min(Joule_calculated),
+  max = max(Joule_calculated),
+  median = median(Joule_calculated),
+  mean = mean(Joule_calculated),
+  sd = sd(Joule_calculated),
+  cv = cv(Joule_calculated)
+)
+```
+Energy consumption per device and app_type
