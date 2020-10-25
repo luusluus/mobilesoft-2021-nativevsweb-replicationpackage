@@ -41,7 +41,7 @@ This replication package is structured as follows:
     |
     |--- dataset/                             The full dataset used in the paper.
     |
-    |--- data-analysis/                       The R scripts for plotting and assesing the extracted data (see below).
+    |--- data-analysis/                       The R Markdown file for plotting and assessing the extracted data (see below).
     |
     |--- mobilesoft-2021-nativevsweb.pdf      A copy of the paper in pdf format
     
@@ -62,7 +62,6 @@ dataset
     |--- OS Java Files         The raw java files found using IAMs extracted from Open Source apps in AndroidTimeMachine.
     |--- javaFilesSrcMl.xml    The java files in the folders above converted in a traversable xml format by means of Src.ML
     |--- questionnaire         The raw responses to our developer questionnaire.
-    |--- Extracted_data.ods    Spreadsheet with collected data, aggregated by category and analysis.
 
 ``` 
 
@@ -71,19 +70,13 @@ dataset
 ```
 data-analysis
     .
-    |--- pwa_visualizations/          Plot figures
+    |--- plots/                       Plot figures
     |
-    |--- all_cpu_cached_values.csv    values for CPU while using cache
+    |--- all_results.csv              Entire dataset
     |
-    |--- all_cpu_nocached_values.csv  values for CPU while not using caching
+    |--- data_pipeline.Rmd            R script for plotting and assesing the dataset
     |
-    |--- all_data.csv                 entire dataset
-    |
-    |--- all_pwa_load_times.csv       values for PWA load times	
-    |
-    |--- main.R                       R script for plotting and assesing the dataset
-    |
-    |--- main_recent.R                slightly updated main.R	
+    |--- data_pipeline.pdf            Output of R Markdown file in pdf format
 ```
 
 ## License
