@@ -20,7 +20,7 @@ If this study is helping your research, consider to cite it is as follows, thank
 ```
 @inproceedings{MobileSoft2021,
   title={{Native app vs their web app counterpart, which one consumes more?}},
-  author={Luciën Martijn and Stijn Meijerink and Dion David Haneveld and Terry Bommels},
+  author={Luciën Martijn and Stijn Meijerink and Dion David Haneveld Daniël Hana and Terry Bommels},
   booktitle = {Proceedings of the 8th IEEE/ACM International Conference on Mobile Software Engineering and Systems},
   year = {2021},
   pages = {to appear},
