@@ -1,7 +1,7 @@
-# MobileSoft 2020 – Replication package
+# Native app vs their web app counterpart, which one consumes more? – Replication package
 
 
-This repository contains the replication package and dataset of the paper published at MobileSoft 2020 with the title **Leave my Apps Alone! A Study on how Android Developers Access Installed Apps on User’s Device**.
+This repository contains the replication package and dataset of the paper with the title **Native app vs their web app counterpart, which one consumesmore?**.
 
 This study has been designed, developed, and reported by the following investigators:
 
