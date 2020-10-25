@@ -41,14 +41,16 @@ This replication package is structured as follows:
     |
     |--- dataset/                   The full dataset used in the paper.
     |
-    |--- data_analysis/             The R scripts for plotting and assesing the extracted data (see below).
+    |--- data-analysis/             The R scripts for plotting and assesing the extracted data (see below).
     |
     
 ```
 
 Each of the folders listed above are described in details in the remaining of this readme.
 
-### Dataset
+### android-runner
+
+### dataset
 ---
 ```
 dataset
@@ -61,10 +63,10 @@ dataset
 
 ``` 
 
-### Data Analysis
+### data-analysis
 ---
 ```
-data_analysis
+data-analysis
     .
     |--- pwa_visualizations/          Plot figures
     |
