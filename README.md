@@ -58,10 +58,10 @@ The source code of our fork of android-runner can be found here: https://github.
 ```
 dataset
     .
-    |--- Top APKs Java Files   The raw java files found using IAMs extracted from apps mined from Google Play Store.  
-    |--- OS Java Files         The raw java files found using IAMs extracted from Open Source apps in AndroidTimeMachine.
-    |--- javaFilesSrcMl.xml    The java files in the folders above converted in a traversable xml format by means of Src.ML
-    |--- questionnaire         The raw responses to our developer questionnaire.
+    |--- high.end.native/      The raw measurement batterystats output files of each native app on high end device.  
+    |--- high.end.web/         The raw measurement batterystats output files of each web app on high end device.  
+    |--- low.end.native/       The raw measurement batterystats output files of each native app on low end device.  
+    |--- low.end.web/          The raw measurement batterystats output files of each native app on low end device.  
 
 ``` 
 
