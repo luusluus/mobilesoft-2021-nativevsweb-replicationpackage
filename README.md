@@ -1,14 +1,15 @@
-# Native app vs their web app counterpart, which one consumes more? – Replication package
+# MobileSoft 2021 - Native app vs their web app counterpart, which one consumes more? – Replication package
 
 
 This repository contains the replication package and dataset of the paper with the title **Native app vs their web app counterpart, which one consumesmore?**.
 
 This study has been designed, developed, and reported by the following investigators:
 
-- Gian Luca Scoccia (DISIM, University of L’Aquila)
-- Ibrahim Kanj (Vrije Universiteit Amsterdam)
-- [Ivano Malavolta](https://www.ivanomalavolta.com) (Vrije Universiteit Amsterdam)
-- Kaveh Razavi (Vrije Universiteit Amsterdam)
+- Luciën Martijn (Vrije Universiteit Amsterdam)
+- Stijn Meijerink (Vrije Universiteit Amsterdam)
+- Dion David Haneveld (Vrije Universiteit Amsterdam)
+- Daniël Hana (Vrije Universiteit Amsterdam)
+- Terry Bommels (Vrije Universiteit Amsterdam)
 
 For any information, interested researchers can contact us by sending an email to any of the investigators listed above.
 The full dataset including raw data, mining scripts, and analysis scripts produced during the study are available below.
@@ -17,13 +18,13 @@ The full dataset including raw data, mining scripts, and analysis scripts produc
 If this study is helping your research, consider to cite it is as follows, thanks!
 
 ```
-@inproceedings{MobileSoft2020,
-  title={{Leave my Apps Alone! A Study on how Android Developers Access Installed Apps on User’s Device}},
-  author={Gian Luca Scoccia and Ibrahim Kanj and Ivano Malavolta and Kaveh Razavi},
-  booktitle = {Proceedings of the 7th IEEE/ACM International Conference on Mobile Software Engineering and Systems},
-  year = {2020},
+@inproceedings{MobileSoft2021,
+  title={{Native app vs their web app counterpart, which one consumes more?}},
+  author={Luciën Martijn and Stijn Meijerink and Dion David Haneveld and Terry Bommels},
+  booktitle = {Proceedings of the 8th IEEE/ACM International Conference on Mobile Software Engineering and Systems},
+  year = {2021},
   pages = {to appear},
-  numpages = {12}
+  numpages = {11}
 }
 ```
 
