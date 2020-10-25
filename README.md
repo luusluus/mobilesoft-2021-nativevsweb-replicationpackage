@@ -37,12 +37,13 @@ This replication package is structured as follows:
 ```
     mobilesoft-2021-nativevsweb-replicationpackage
     .
-    |--- android-runner/            Android-runner framework to execute experiments.
+    |--- android-runner/                      Android-runner framework to execute experiments.
     |
-    |--- dataset/                   The full dataset used in the paper.
+    |--- dataset/                             The full dataset used in the paper.
     |
-    |--- data-analysis/             The R scripts for plotting and assesing the extracted data (see below).
+    |--- data-analysis/                       The R scripts for plotting and assesing the extracted data (see below).
     |
+    |--- mobilesoft-2021-nativevsweb.pdf      A copy of the paper in pdf format
     
 ```
 
