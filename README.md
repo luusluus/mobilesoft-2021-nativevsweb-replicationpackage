@@ -49,6 +49,7 @@ This replication package is structured as follows:
 Each of the folders listed above are described in details in the remaining of this readme.
 
 ### android-runner
+---
 The source code of our fork of android-runner can be found here: https://github.com/bommels/android-runner.
 
 ### dataset
