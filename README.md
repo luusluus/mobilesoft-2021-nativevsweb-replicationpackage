@@ -33,15 +33,17 @@ If this study is helping your research, consider to cite it is as follows, thank
 
 This replication package is structured as follows:
 
+
 ```
+    mobilesoft-2021-nativevsweb-replicationpackage
     .
-    |--- scripts/       		The scripts that have been used to collect the Android apps and to identify and extract IAMs calls from them.
+    |--- android-runner/            Android-runner framework to execute experiments.
     |
-    |--- dataset/             	The full dataset used in the paper, including the raw files with IAMs calls, the questionnaire responses and the aggregated data by app category.
+    |--- dataset/                   The full dataset used in the paper.
     |
-    |--- libraries_classification/   	The results of the manual classification procedure performed for the Top 20 IAM using libraries.
+    |--- data_analysis/             The R scripts for plotting and assesing the extracted data (see below).
     |
-    |--- MobileSoft_2020.pdf             A copy of the paper in pdf format
+    
 ```
 
 Each of the folders listed above are described in details in the remaining of this readme.
@@ -59,18 +61,25 @@ dataset
 
 ``` 
 
-### Scripts
----
-Usage of the scripts is explained in [README](https://github.com/S2-group/mobilesoft-2020-iam-replication-package/blob/master/scripts/README.md) file inside the scripts folder.
-
-### Libraries classification
+### Data Analysis
 ---
 ```
-libraries_classification
+data_analysis
     .
-    |--- classification.csv                      Results of the manual classification process of libraries. The csv includes the original purpose as classified indipendently by the two researchers as well as the final one after disagreements were solved.
+    |--- pwa_visualizations/          Plot figures
+    |
+    |--- all_cpu_cached_values.csv    values for CPU while using cache
+    |
+    |--- all_cpu_nocached_values.csv  values for CPU while not using caching
+    |
+    |--- all_data.csv                 entire dataset
+    |
+    |--- all_pwa_load_times.csv       values for PWA load times	
+    |
+    |--- main.R                       R script for plotting and assesing the dataset
+    |
+    |--- main_recent.R                slightly updated main.R	
 ```
-
 
 ## License
 
