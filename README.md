@@ -1,7 +1,7 @@
 # MobileSoft 2021 - Native app vs their web app counterpart, which one consumes more? – Replication package
 
 
-This repository contains the replication package and dataset of the paper with the title **Native app vs their web app counterpart, which one consumesmore?**.
+This repository contains the replication package and dataset of the paper with the title **Native app vs their web app counterpart, which one consumes more?**.
 
 This study has been designed, developed, and reported by the following investigators:
 
